@@ -31,6 +31,7 @@ HR_PySpark_Project/
 ├── src/
 │   ├── __init__.py
 │   ├── extract.py
+│   ├── load_csv.py
 │   ├── transform.py
 │   ├── quality_checks.py
 │   └── load.py
@@ -83,6 +84,32 @@ PGDATABASE
 PGUSER
 PGPASSWORD
 Credentials must never be committed to GitHub.
+## Loading source data from CSV
+Create a `data\csv` folder in the project root and place one UTF-8 CSV file in it for each PostgreSQL table:
+
+| File | Required header columns, in this order |
+|---|---|
+| `departments.csv` | `department_id,department_name,location,head_of_department` |
+| `job_roles.csv` | `job_id,job_title,grade,minimum_salary,maximum_salary` |
+| `employees.csv` | `employee_id,first_name,last_name,gender,dob,department_id,job_id,manager_id,hire_date,employment_type,status` |
+| `performance.csv` | `performance_id,employee_id,review_year,goal_score,kpi_score,manager_rating,overall_rating,performance_category,promotion_recommended` |
+| `salary.csv` | `employee_id,basic_salary,bonus,allowance,deductions,net_salary` |
+
+Use `YYYY-MM-DD` for dates and `true` or `false` for `promotion_recommended`. Leave nullable values blank. The employee CSV can list managers after their reports; the loader resolves manager references after loading employees.
+
+Create the schema and tables once by running `sql/01_create_tables.sql` in PostgreSQL. From the project root, replace the existing table data by running:
+
+```powershell
+python -m src.load_csv --confirm
+```
+
+For CSV files in a different folder, pass its path:
+
+```powershell
+python -m src.load_csv --csv-dir "C:\path\to\csv" --confirm
+```
+
+This command deletes the existing rows in all five HR tables and imports the CSV files as one transaction. If validation or insertion fails, PostgreSQL rolls back the replacement and preserves the previous data. The command requires `--confirm` to avoid accidental deletion.
 Running the Project
 Install dependencies:
 pip install -r requirements.txt

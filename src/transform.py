@@ -200,7 +200,7 @@ def add_business_metrics(employee_360):
         "promotion_status",
         when(
             (
-                col("overall_rating") >= 90
+                col("overall_rating") >= 4.10
             )
             & (
                 col("promotion_recommended") == True
@@ -208,7 +208,7 @@ def add_business_metrics(employee_360):
             "Eligible",
         )
         .when(
-            col("overall_rating") >= 80,
+            col("overall_rating") >= 4,
             "Review",
         )
         .otherwise("Not Eligible"),

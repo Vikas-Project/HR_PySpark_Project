@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS hr_data.departments (
     department_id VARCHAR(10) PRIMARY KEY,
     department_name VARCHAR(100) NOT NULL,
     location VARCHAR(100),
-    head_of_department VARCHAR(100),
+    head_of_department VARCHAR(100)
 );
 
 

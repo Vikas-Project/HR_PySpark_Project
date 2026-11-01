@@ -16,3 +16,13 @@ def read_parquet(spark, output_path):
     """
 
     return spark.read.parquet(output_path)
+
+
+def show_parquet(spark, output_path, num_rows=5, truncate=False):
+    """
+    Read Parquet output, display rows, and return the DataFrame.
+    """
+
+    df = read_parquet(spark, output_path)
+    df.show(num_rows, truncate=truncate)
+    return df

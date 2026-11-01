@@ -1,0 +1,26 @@
+Once the project is on GitHub, another person can clone it and run it on their own computer. They’ll need their own PostgreSQL database and credentials; they should not use yours.
+
+For Windows, the process is:
+
+Install Git, Python, and PostgreSQL. Create a database and run the project’s table creation SQL.
+
+Clone the GitHub repository and open PowerShell in its folder—the project root.
+
+Create and activate a virtual environment, then install dependencies:
+
+
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r config\requirements.txt
+
+Set their own PGHOST, PGPORT, PGDATABASE, PGUSER, and PGPASSWORD environment variables for their PostgreSQL database. The database user needs permission to use the hr_data schema and load its tables.
+
+Put the five CSV files in data\csv in the project root, then run:
+
+python -m src.load_csv --confirm
+
+This replaces the existing data in all five HR tables with the CSV data.
+
+Open the Employee 360 notebook and run it to create the output.
+
+Before pushing to GitHub: the current worktree shows .venv files staged, and the ignore file is inside config, so it won’t ignore a virtual environment at the project root. Don’t push the .venv folder. Also, .env.example contains a username and password-like values; replace them with obvious placeholders and never publish real credentials. Don’t upload real HR CSV data to a public repository—use synthetic sample data or share the CSVs privately.

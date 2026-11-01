@@ -1,0 +1,51 @@
+﻿performance_id,employee_id,review_year,goal_score,kpi_score,manager_rating,overall_rating,performance_category,promotion_recommended
+1,E001,2025,4.5,4.6,4.5,4.5,Excellent,Yes
+2,E002,2025,4.2,4.1,4.3,4.2,Very Good,Yes
+3,E003,2025,4.8,4.9,4.7,4.8,Excellent,Yes
+4,E004,2025,3.8,3.9,4,3.9,Good,No
+5,E005,2025,4.3,4.4,4.2,4.3,Very Good,Yes
+6,E006,2025,4.6,4.7,4.5,4.6,Excellent,Yes
+7,E007,2025,4.1,4,4.2,4.1,Very Good,No
+8,E008,2025,4.7,4.8,4.6,4.7,Excellent,Yes
+9,E009,2025,3.7,3.8,3.9,3.8,Good,No
+10,E010,2025,4.4,4.5,4.3,4.4,Very Good,Yes
+11,E011,2025,4.2,4.3,4.1,4.2,Very Good,No
+12,E012,2025,4.8,4.7,4.9,4.8,Excellent,Yes
+13,E013,2025,4.9,4.8,4.7,4.8,Excellent,Yes
+14,E014,2025,4.1,4.2,4,4.1,Very Good,No
+15,E015,2025,4.5,4.4,4.6,4.5,Excellent,Yes
+16,E016,2025,3.9,4,3.8,3.9,Good,No
+17,E017,2025,4.8,4.9,4.7,4.8,Excellent,Yes
+18,E018,2025,4.2,4.1,4.3,4.2,Very Good,No
+19,E019,2025,4.4,4.5,4.3,4.4,Very Good,Yes
+20,E020,2025,4.7,4.6,4.8,4.7,Excellent,Yes
+21,E021,2025,4.3,4.2,4.4,4.3,Very Good,Yes
+22,E022,2025,3.9,4,3.8,3.9,Good,No
+23,E023,2025,4.1,4.2,4,4.1,Very Good,No
+24,E024,2025,4.8,4.7,4.9,4.8,Excellent,Yes
+25,E025,2025,4.4,4.3,4.5,4.4,Very Good,Yes
+26,E026,2025,4.2,4.1,4.3,4.2,Very Good,No
+27,E027,2025,4,3.9,4.1,4,Good,No
+28,E028,2025,4.7,4.8,4.6,4.7,Excellent,Yes
+29,E029,2025,3.8,3.9,3.7,3.8,Good,No
+30,E030,2025,4.3,4.4,4.2,4.3,Very Good,Yes
+31,E031,2025,4.6,4.5,4.7,4.6,Excellent,Yes
+32,E032,2025,4.1,4.2,4,4.1,Very Good,No
+33,E033,2025,4.5,4.6,4.4,4.5,Excellent,Yes
+34,E034,2025,3.7,3.8,3.9,3.8,Good,No
+35,E035,2025,4,4.1,4,4,Good,No
+36,E036,2025,4.8,4.7,4.9,4.8,Excellent,Yes
+37,E037,2025,4.2,4.1,4.3,4.2,Very Good,No
+38,E038,2025,4.6,4.5,4.7,4.6,Excellent,Yes
+39,E039,2025,4.7,4.8,4.6,4.7,Excellent,Yes
+40,E040,2025,4.3,4.2,4.4,4.3,Very Good,Yes
+41,E041,2025,3.8,3.7,3.9,3.8,Good,No
+42,E042,2025,4.9,4.8,4.9,4.9,Excellent,Yes
+43,E043,2025,4.1,4.2,4,4.1,Very Good,No
+44,E044,2025,4.5,4.6,4.4,4.5,Excellent,Yes
+45,E045,2025,3.9,4,3.8,3.9,Good,No
+46,E046,2025,4.4,4.3,4.5,4.4,Very Good,Yes
+47,E047,2025,4.2,4.3,4.1,4.2,Very Good,No
+48,E048,2025,4.6,4.7,4.5,4.6,Excellent,Yes
+49,E049,2025,4,4.1,3.9,4,Good,No
+50,E050,2025,4.7,4.8,4.6,4.7,Excellent,Yes

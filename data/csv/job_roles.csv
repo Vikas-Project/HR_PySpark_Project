@@ -1,0 +1,9 @@
+﻿job_id,job_title,grade,minimum_salary,maximum_salary
+J01,Software Engineer,G5,60000,95000
+J02,HR Executive,G4,45000,75000
+J03,Financial Analyst,G5,65000,100000
+J04,Marketing Specialist,G4,50000,85000
+J05,Sales Executive,G4,45000,90000
+J06,Operations Manager,G6,75000,120000
+J07,Recruiter,G3,40000,65000
+J08,IT Manager,G7,90000,150000
